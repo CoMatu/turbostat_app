@@ -1,3 +1,4 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:hive/hive.dart';
@@ -25,6 +26,7 @@ import 'features/turbostat_tdd/presentation/providers/parts_cart.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized(); //без него ловит ошибку main
+  await Firebase.initializeApp();
   await di.init();
   final appDocumentDir = await path_provider.getApplicationDocumentsDirectory();
   Hive.init(appDocumentDir.path);

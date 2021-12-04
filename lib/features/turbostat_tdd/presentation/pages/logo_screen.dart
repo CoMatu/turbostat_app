@@ -11,8 +11,7 @@ class LogoScreen extends StatefulWidget {
   }
 }
 
-class LogoScreenState extends State<LogoScreen>
-    with SingleTickerProviderStateMixin {
+class LogoScreenState extends State<LogoScreen> with SingleTickerProviderStateMixin {
   late Animation<double> animation;
   late AnimationController animationController;
   // late Map<Permission, PermissionStatus> permissions;
@@ -28,7 +27,7 @@ class LogoScreenState extends State<LogoScreen>
 
   void getSharedPreferences() async {
     prefs = await SharedPreferences.getInstance();
-    dataSource = prefs.getString('data_source')!;
+    dataSource = prefs.getString('data_source') ?? "";
 //    prefs.clear(); // для тестирования разных режимов входа
   }
 
@@ -54,8 +53,7 @@ class LogoScreenState extends State<LogoScreen>
   void initState() {
     super.initState();
     startTime();
-    animationController = AnimationController(
-        duration: Duration(milliseconds: 1000), vsync: this);
+    animationController = AnimationController(duration: Duration(milliseconds: 1000), vsync: this);
     animation = Tween(begin: 0.0, end: 200.0).animate(animationController)
       ..addListener(() => this.setState(() {}))
       ..addStatusListener((AnimationStatus status) {});
