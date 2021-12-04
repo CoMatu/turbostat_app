@@ -1,6 +1,5 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:permission_handler/permission_handler.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:turbostat_app/features/turbostat_tdd/presentation/providers/providers.dart';
@@ -16,15 +15,15 @@ class LogoScreenState extends State<LogoScreen>
     with SingleTickerProviderStateMixin {
   late Animation<double> animation;
   late AnimationController animationController;
-  late Map<Permission, PermissionStatus> permissions;
+  // late Map<Permission, PermissionStatus> permissions;
   late SharedPreferences prefs;
   late String dataSource;
 
   void getPermission() async {
-    permissions = await [
-      Permission.camera,
-      Permission.storage,
-    ].request();
+    // permissions = await [
+    //   Permission.camera,
+    //   Permission.storage,
+    // ].request();
   }
 
   void getSharedPreferences() async {
