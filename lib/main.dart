@@ -1,3 +1,4 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:hive/hive.dart';
@@ -22,9 +23,13 @@ import 'features/turbostat_tdd/presentation/providers/maintenancies.dart';
 import 'features/turbostat_tdd/presentation/providers/page_counter.dart';
 import 'features/turbostat_tdd/presentation/providers/parts.dart';
 import 'features/turbostat_tdd/presentation/providers/parts_cart.dart';
+import 'firebase_options.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized(); //без него ловит ошибку main
+
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
+
   await di.init();
   final appDocumentDir = await path_provider.getApplicationDocumentsDirectory();
   Hive.init(appDocumentDir.path);
@@ -61,6 +66,7 @@ class MyApp extends StatelessWidget {
           AppLocalizations.delegate,
           GlobalMaterialLocalizations.delegate,
           GlobalWidgetsLocalizations.delegate,
+          GlobalCupertinoLocalizations.delegate,
         ],
         supportedLocales: AppLocalizations.supportedLocales,
         title: 'turbostat',
@@ -84,5 +90,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
-//TODO на дашбод рекламу но начало показа только через 10 запусков чтобы не оттолкнуть

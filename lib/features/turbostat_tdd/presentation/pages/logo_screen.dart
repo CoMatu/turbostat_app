@@ -1,8 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:turbostat_app/features/turbostat_tdd/presentation/providers/providers.dart';
 
 class LogoScreen extends StatefulWidget {
   @override
@@ -28,7 +26,7 @@ class LogoScreenState extends State<LogoScreen>
 
   void getSharedPreferences() async {
     prefs = await SharedPreferences.getInstance();
-    dataSource = prefs.getString('data_source')!;
+    dataSource = prefs.getString('data_source') ?? '';
 //    prefs.clear(); // для тестирования разных режимов входа
   }
 

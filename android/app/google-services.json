@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "337246895110",
+    "firebase_url": "https://carstat-d0da1.firebaseio.com",
+    "project_id": "carstat-d0da1",
+    "storage_bucket": "carstat-d0da1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:337246895110:android:8d16fd36b2ee9533f29787",
+        "android_client_info": {
+          "package_name": "com.example.turbostat_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "337246895110-kv9lf0cm648p2auauof7gj8snbivemhc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIPOAGbydOZDZ5X0DhY47PmeNei1LsL_s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "337246895110-kv9lf0cm648p2auauof7gj8snbivemhc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

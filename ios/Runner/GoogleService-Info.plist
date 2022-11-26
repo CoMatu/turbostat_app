@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>337246895110-ulfl44jv1d9vo952nkhtt4ouuqpegdfj.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.337246895110-ulfl44jv1d9vo952nkhtt4ouuqpegdfj</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>337246895110-15ili658rdmui3doiu3e7d4oo14b9sas.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDCtplCvokFQxOXakMzBk7Q7JQvWzW9jUs</string>
+	<key>GCM_SENDER_ID</key>
+	<string>337246895110</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.turbostatApp</string>
+	<key>PROJECT_ID</key>
+	<string>carstat-d0da1</string>
+	<key>STORAGE_BUCKET</key>
+	<string>carstat-d0da1.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:337246895110:ios:e36571b183d09035f29787</string>
+	<key>DATABASE_URL</key>
+	<string>https://carstat-d0da1.firebaseio.com</string>
+</dict>
+</plist>
