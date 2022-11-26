@@ -1,4 +1,3 @@
-import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:get_it/get_it.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:turbostat_app/core/mode/mode_info.dart';
@@ -78,13 +77,12 @@ Future<void> init() async {
       () => TurbostatLocalDataSourceImpl());
 
   //! Core
-  sl.registerLazySingleton<NetworkInfo>(() => NetworkInfoImpl(sl()));
+  sl.registerLazySingleton<NetworkInfo>(() => NetworkInfoImpl());
   sl.registerLazySingleton<ModeInfo>(() => ModeInfoImpl());
 
   //! External
   final sharedPreferences = await SharedPreferences.getInstance();
   sl.registerLazySingleton(() => sharedPreferences);
-  sl.registerLazySingleton(() => Connectivity());
 //  final collectionReference = Firestore.instance.collection('users');
 //  sl.registerLazySingleton(() => collectionReference);
 }
