@@ -80,10 +80,10 @@ class _LoginPageState extends State<LoginPage> {
   }
 
   void _showSnackBar(e) {
-    key.currentState!.showSnackBar(SnackBar(
-      content: Text(e.toString()),
-      backgroundColor: Colors.red,
-    ));
+    // key.currentState!.showSnackBar(SnackBar(
+    //   content: Text(e.toString()),
+    //   backgroundColor: Colors.red,
+    // ));
   }
 
   Future<void> googleSignIn() async {
